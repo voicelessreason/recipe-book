@@ -1,14 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @recipe.title %>
-</p>
+<div class='header'>
+  <h1>Recipes</h1>
+</div>
 
-<p>
-  <strong>Body:</strong>
-  <%= @recipe.body %>
-</p>
+<div class='main-content'>
+  <p class='recipe-title'>
+    <%= @recipe.title %>
+  </p>
 
-<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-<%= link_to 'Back', recipes_path %>
+  <p class='recipe-body'>
+    <%= @recipe.body %>
+  </p>
+
+  <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+  <%= link_to 'Back', recipes_path %>
+</div>
+<div class='footer'>
+
+</div>
