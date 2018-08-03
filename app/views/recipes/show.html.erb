@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <div class='header'>
   <h1>Recipes</h1>
 </div>
@@ -9,8 +7,12 @@
     <%= @recipe.title %>
   </p>
 
-  <p class='recipe-body'>
-    <%= @recipe.body %>
+  <p class='recipe-ingredients'>
+    <%= @recipe.ingredients %>
+  </p>
+
+  <p class='recipe-instructions'>
+    <%= @recipe.instructions %>
   </p>
 
   <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
